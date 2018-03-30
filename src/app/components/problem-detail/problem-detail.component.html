@@ -1,7 +1,4 @@
 <!-- problem-detail.component.html -->
-<p>
- problem works
-</p>  
 <div class="container" *ngIf="problem">
   <div class="col-sm-12 col-md-4">
     <div>
@@ -9,7 +6,7 @@
       {{problem.id}}.{{problem.name}}
       </h2>
       <p>
-      {{problem}}
+          {{problem.desc}}
       </p>
     </div>
   </div>

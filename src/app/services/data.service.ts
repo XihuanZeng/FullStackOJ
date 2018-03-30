@@ -15,4 +15,9 @@ export class DataService {
   getProblem(id: number): Problem {
     return this.problems.find((problem) => problem.id === id);
   }
+
+  addProblem(problem: Problem) {
+    problem.id = this.problems.length + 1
+    this.problems.push(problem)
+  }
 }
