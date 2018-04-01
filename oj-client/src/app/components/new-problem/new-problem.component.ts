@@ -18,7 +18,7 @@ const DEFAULT_PROBLEM: Problem = Object.freeze( {
 })
 export class NewProblemComponent implements OnInit {
   newProblem: Problem = Object.assign({}, DEFAULT_PROBLEM);
-  difficutiles: String[] = ['easy', 'medium', 'hard', 'super']
+  difficulties: String[] = ['easy', 'medium', 'hard', 'super'];
 
   constructor(private dataService: DataService) { }
 
