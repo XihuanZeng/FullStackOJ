@@ -22,7 +22,8 @@ let problems = [
       "id":4,
       "name":"Triangle Count",
       "desc":"Given an array of integers, how many three numbers can be found in the array, so that we can build an triangle whose three edges length is the three numbers that we find?",
-      "difficulty":"hard"},
+      "difficulty":"hard"
+  },
   {
       "id":5,
       "name":"Sliding Window Maximum",
