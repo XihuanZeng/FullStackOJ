@@ -7,7 +7,7 @@ import { NewProblemComponent } from './components/new-problem/new-problem.compon
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'problemes',
+        redirectTo: 'problems',
         pathMatch: 'full' // exact match
     },
     {

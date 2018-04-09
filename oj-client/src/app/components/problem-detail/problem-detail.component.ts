@@ -14,9 +14,10 @@ export class ProblemDetailComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-
+    // always this.route.params.subscribe
     this.route.params.subscribe(params => {
-      this.problem = this.dataService.getProblem(+params['id']);
+      this.dataService.getProblem(+params['id'])
+      .then(problem => this.problem = problem);
     })
  }
  
