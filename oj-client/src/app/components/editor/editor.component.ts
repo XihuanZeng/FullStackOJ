@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { CollaborationService } from '../../services/collaboration.service';
+// this will handle the submission request
+import { DataService } from '../../services/data.service';
+
 declare var ace: any;
 
 @Component({
@@ -13,6 +16,8 @@ export class EditorComponent implements OnInit {
   public languages: string[] = ['Java', 'Python'];
   language: string = 'Java';
   sessionId: string;
+  // placeholder for the output of submission
+  output: string;
 
   defaultContent = {
   	'Java': `public class Example {
@@ -26,7 +31,7 @@ export class EditorComponent implements OnInit {
   };
 
   constructor(private collaboration: CollaborationService, 
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit() {
     // use problem id as session id
@@ -77,6 +82,13 @@ export class EditorComponent implements OnInit {
   submit(): void {
   	let userCode = this.editor.getValue();
   	console.log(userCode);
+
+    const data = {
+      usercode: userCode,
+      lang: this.language.toLocaleLowerCase()
+    };
+
+    this.dataService.buildAndRun(data).then(res => this.output = res);
   }
 
 

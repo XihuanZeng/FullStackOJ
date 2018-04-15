@@ -32,24 +32,24 @@ module.exports = "<router-outlet></router-outlet>"
 /***/ }),
 
 /***/ "./src/app/app.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
     }
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        core_1.Component({
             selector: 'app-root',
             template: __webpack_require__("./src/app/app.component.html"),
             styles: [__webpack_require__("./src/app/app.component.css")]
@@ -57,91 +57,77 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent);
     return AppComponent;
 }());
-
+exports.AppComponent = AppComponent;
 
 
 /***/ }),
 
 /***/ "./src/app/app.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_collaboration_service__ = __webpack_require__("./src/app/services/collaboration.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_problem_list_problem_list_component__ = __webpack_require__("./src/app/components/problem-list/problem-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_problem_detail_problem_detail_component__ = __webpack_require__("./src/app/components/problem-detail/problem-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routes__ = __webpack_require__("./src/app/app.routes.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_new_problem_new_problem_component__ = __webpack_require__("./src/app/components/new-problem/new-problem.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_editor_editor_component__ = __webpack_require__("./src/app/components/editor/editor.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var data_service_1 = __webpack_require__("./src/app/services/data.service.ts");
+var collaboration_service_1 = __webpack_require__("./src/app/services/collaboration.service.ts");
+var app_component_1 = __webpack_require__("./src/app/app.component.ts");
+var problem_list_component_1 = __webpack_require__("./src/app/components/problem-list/problem-list.component.ts");
+var problem_detail_component_1 = __webpack_require__("./src/app/components/problem-detail/problem-detail.component.ts");
+var app_routes_1 = __webpack_require__("./src/app/app.routes.ts");
+var new_problem_component_1 = __webpack_require__("./src/app/components/new-problem/new-problem.component.ts");
+var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var editor_component_1 = __webpack_require__("./src/app/components/editor/editor.component.ts");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__components_problem_list_problem_list_component__["a" /* ProblemListComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__components_problem_detail_problem_detail_component__["a" /* ProblemDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__components_new_problem_new_problem_component__["a" /* NewProblemComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_editor_editor_component__["a" /* EditorComponent */]
+                app_component_1.AppComponent,
+                problem_list_component_1.ProblemListComponent,
+                problem_detail_component_1.ProblemDetailComponent,
+                new_problem_component_1.NewProblemComponent,
+                editor_component_1.EditorComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_10__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_9__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_7__app_routes__["a" /* routing */]
+                platform_browser_1.BrowserModule,
+                http_1.HttpClientModule,
+                forms_1.FormsModule,
+                app_routes_1.routing
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */],
-                __WEBPACK_IMPORTED_MODULE_3__services_collaboration_service__["a" /* CollaborationService */]
+                data_service_1.DataService,
+                collaboration_service_1.CollaborationService
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+            bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
     return AppModule;
 }());
-
+exports.AppModule = AppModule;
 
 
 /***/ }),
 
 /***/ "./src/app/app.routes.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_problem_list_problem_list_component__ = __webpack_require__("./src/app/components/problem-list/problem-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_problem_detail_problem_detail_component__ = __webpack_require__("./src/app/components/problem-detail/problem-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_new_problem_new_problem_component__ = __webpack_require__("./src/app/components/new-problem/new-problem.component.ts");
 
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var problem_list_component_1 = __webpack_require__("./src/app/components/problem-list/problem-list.component.ts");
+var problem_detail_component_1 = __webpack_require__("./src/app/components/problem-detail/problem-detail.component.ts");
+var new_problem_component_1 = __webpack_require__("./src/app/components/new-problem/new-problem.component.ts");
 // a list of objects
 var routes = [
     {
@@ -151,17 +137,17 @@ var routes = [
     },
     {
         path: 'problems',
-        component: __WEBPACK_IMPORTED_MODULE_1__components_problem_list_problem_list_component__["a" /* ProblemListComponent */]
+        component: problem_list_component_1.ProblemListComponent
     },
     {
         // handling random url 
         path: 'new',
-        component: __WEBPACK_IMPORTED_MODULE_3__components_new_problem_new_problem_component__["a" /* NewProblemComponent */],
+        component: new_problem_component_1.NewProblemComponent,
         pathMatch: 'full' // exact match
     },
     {
         path: 'problems/:id',
-        component: __WEBPACK_IMPORTED_MODULE_2__components_problem_detail_problem_detail_component__["a" /* ProblemDetailComponent */]
+        component: problem_detail_component_1.ProblemDetailComponent
     },
     {
         // handling random url 
@@ -169,7 +155,7 @@ var routes = [
         redirectTo: 'problems'
     }
 ];
-var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule */].forRoot(routes);
+exports.routing = router_1.RouterModule.forRoot(routes);
 
 
 /***/ }),
@@ -184,18 +170,15 @@ module.exports = "@media screen { \n  #editor { \n    height: 600px; \n  } \n \n
 /***/ "./src/app/components/editor/editor.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section>\n  <header class=\"editor-header\">\n    <div class=\"row\">\n      <select class=\"form-control pull-left lang-select\" name=\"language\"\n        [(ngModel)]=\"language\" (change)=\"setLanguage(language)\">\n      <option *ngFor=\"let language of languages\" [value]=\"language\">\n        {{language}}\n      </option>\n      </select>\n      <!--reset button -->\n      <!-- Button trigger modal -->\n      <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#myModal\">\n        Reset\n      </button>\n\n      <!-- Modal -->\n      <div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n        <div class=\"modal-dialog\" role=\"document\">\n          <div class=\"modal-content\">\n            <div class=\"modal-header\">\n              <h5 class=\"modal-title\" id=\"exampleModalLabel\">Are you sure</h5>\n              <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                <span aria-hidden=\"true\">&times;</span>\n              </button>\n            </div>\n            <div class=\"modal-body\">\n              You will lose current code in the editor, are you sure?\n            </div>\n            <div class=\"modal-footer\">\n              <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cancel</button>\n              <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\"\n              (click)=\"resetEditor()\">Reset</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n  <div id=\"editor\">\n  </div><!-- This is the body --> \n  <footer class=\"editor-footer\">\n      <button type=\"button\" class=\"btn btn-success pull-right\" \n      (click)=\"submit()\">Submit Solution</button>\n  </footer>\n</section>"
+module.exports = "<section>\n  <header class=\"editor-header\">\n    <div class=\"row\">\n      <select class=\"form-control pull-left lang-select\" name=\"language\"\n        [(ngModel)]=\"language\" (change)=\"setLanguage(language)\">\n      <option *ngFor=\"let language of languages\" [value]=\"language\">\n        {{language}}\n      </option>\n      </select>\n      <!--reset button -->\n      <!-- Button trigger modal -->\n      <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#myModal\">\n        Reset\n      </button>\n\n      <!-- Modal -->\n      <div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n        <div class=\"modal-dialog\" role=\"document\">\n          <div class=\"modal-content\">\n            <div class=\"modal-header\">\n              <h5 class=\"modal-title\" id=\"exampleModalLabel\">Are you sure</h5>\n              <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                <span aria-hidden=\"true\">&times;</span>\n              </button>\n            </div>\n            <div class=\"modal-body\">\n              You will lose current code in the editor, are you sure?\n            </div>\n            <div class=\"modal-footer\">\n              <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cancel</button>\n              <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\"\n              (click)=\"resetEditor()\">Reset</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </header>\n  <div id=\"editor\">\n  </div><!-- This is the body --> \n  <div>\n    {{output}}\n  </div>\n  <footer class=\"editor-footer\">\n      <button type=\"button\" class=\"btn btn-success pull-right\" \n      (click)=\"submit()\">Submit Solution</button>\n  </footer>\n</section>"
 
 /***/ }),
 
 /***/ "./src/app/components/editor/editor.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditorComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_collaboration_service__ = __webpack_require__("./src/app/services/collaboration.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -205,13 +188,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var collaboration_service_1 = __webpack_require__("./src/app/services/collaboration.service.ts");
+// this will handle the submission request
+var data_service_1 = __webpack_require__("./src/app/services/data.service.ts");
 var EditorComponent = /** @class */ (function () {
-    function EditorComponent(collaboration, route) {
+    function EditorComponent(collaboration, route, dataService) {
         this.collaboration = collaboration;
         this.route = route;
+        this.dataService = dataService;
         this.languages = ['Java', 'Python'];
         this.language = 'Java';
         this.defaultContent = {
@@ -228,6 +215,7 @@ var EditorComponent = /** @class */ (function () {
             .subscribe(function (params) {
             _this.sessionId = params['id'];
             _this.initEditor();
+            _this.collaboration.restoreBuffer();
         });
     };
     EditorComponent.prototype.initEditor = function () {
@@ -237,11 +225,17 @@ var EditorComponent = /** @class */ (function () {
         this.resetEditor();
         this.collaboration.init(this.editor, this.sessionId);
         this.editor.lastAppliedChange = null;
+        // this.editor.on is also part of API of our ace library
         this.editor.on("change", function (e) {
-            console.log('editor changes: ' + JSON.stringify(e));
+            console.log('editor is changing: ' + JSON.stringify(e));
             if (_this.editor.lastAppliedChange != e) {
                 _this.collaboration.change(JSON.stringify(e));
             }
+        });
+        // this part is not working as expected because this.editor.on is a API,
+        // it only listen to several events, like 'change', go to the API reference for more information
+        this.editor.on('userChange', function (data) {
+            console.log('collaboration: user changes ' + data);
         });
     };
     EditorComponent.prototype.resetEditor = function () {
@@ -253,21 +247,27 @@ var EditorComponent = /** @class */ (function () {
         this.resetEditor();
     };
     EditorComponent.prototype.submit = function () {
+        var _this = this;
         var userCode = this.editor.getValue();
         console.log(userCode);
+        var data = {
+            usercode: userCode,
+            lang: this.language.toLocaleLowerCase()
+        };
+        this.dataService.buildAndRun(data).then(function (res) { return _this.output = res; });
     };
     EditorComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        core_1.Component({
             selector: 'app-editor',
             template: __webpack_require__("./src/app/components/editor/editor.component.html"),
             styles: [__webpack_require__("./src/app/components/editor/editor.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_collaboration_service__["a" /* CollaborationService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]])
+        __metadata("design:paramtypes", [collaboration_service_1.CollaborationService,
+            router_1.ActivatedRoute, data_service_1.DataService])
     ], EditorComponent);
     return EditorComponent;
 }());
-
+exports.EditorComponent = EditorComponent;
 
 
 /***/ }),
@@ -287,12 +287,10 @@ module.exports = "<!-- problem-list.component.html -->\n<div>\n    <form #formRe
 /***/ }),
 
 /***/ "./src/app/components/new-problem/new-problem.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewProblemComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -302,8 +300,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var data_service_1 = __webpack_require__("./src/app/services/data.service.ts");
 var DEFAULT_PROBLEM = Object.freeze({
     id: 0,
     name: '',
@@ -324,16 +323,16 @@ var NewProblemComponent = /** @class */ (function () {
         this.newProblem = Object.assign({}, DEFAULT_PROBLEM);
     };
     NewProblemComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        core_1.Component({
             selector: 'app-new-problem',
             template: __webpack_require__("./src/app/components/new-problem/new-problem.component.html"),
             styles: [__webpack_require__("./src/app/components/new-problem/new-problem.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_data_service__["a" /* DataService */]])
+        __metadata("design:paramtypes", [data_service_1.DataService])
     ], NewProblemComponent);
     return NewProblemComponent;
 }());
-
+exports.NewProblemComponent = NewProblemComponent;
 
 
 /***/ }),
@@ -353,13 +352,10 @@ module.exports = "<!-- problem-detail.component.html -->\n<div class=\"container
 /***/ }),
 
 /***/ "./src/app/components/problem-detail/problem-detail.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProblemDetailComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -369,9 +365,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var data_service_1 = __webpack_require__("./src/app/services/data.service.ts");
 var ProblemDetailComponent = /** @class */ (function () {
     function ProblemDetailComponent(dataService, route) {
         this.dataService = dataService;
@@ -386,17 +383,17 @@ var ProblemDetailComponent = /** @class */ (function () {
         });
     };
     ProblemDetailComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        core_1.Component({
             selector: 'app-problem-detail',
             template: __webpack_require__("./src/app/components/problem-detail/problem-detail.component.html"),
             styles: [__webpack_require__("./src/app/components/problem-detail/problem-detail.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_data_service__["a" /* DataService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]])
+        __metadata("design:paramtypes", [data_service_1.DataService,
+            router_1.ActivatedRoute])
     ], ProblemDetailComponent);
     return ProblemDetailComponent;
 }());
-
+exports.ProblemDetailComponent = ProblemDetailComponent;
 
 
 /***/ }),
@@ -416,12 +413,10 @@ module.exports = "<div class=\"container\">\n  <app-new-problem></app-new-proble
 /***/ }),
 
 /***/ "./src/app/components/problem-list/problem-list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProblemListComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -431,8 +426,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var data_service_1 = __webpack_require__("./src/app/services/data.service.ts");
 var ProblemListComponent = /** @class */ (function () {
     function ProblemListComponent(dataService) {
         this.dataService = dataService;
@@ -449,26 +445,25 @@ var ProblemListComponent = /** @class */ (function () {
             .subscribe(function (problems) { return _this.problems = problems; });
     };
     ProblemListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        core_1.Component({
             selector: 'app-problem-list',
             template: __webpack_require__("./src/app/components/problem-list/problem-list.component.html"),
             styles: [__webpack_require__("./src/app/components/problem-list/problem-list.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_data_service__["a" /* DataService */]])
+        __metadata("design:paramtypes", [data_service_1.DataService])
     ], ProblemListComponent);
     return ProblemListComponent;
 }());
-
+exports.ProblemListComponent = ProblemListComponent;
 
 
 /***/ }),
 
 /***/ "./src/app/services/collaboration.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollaborationService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -478,7 +473,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var CollaborationService = /** @class */ (function () {
     function CollaborationService() {
     }
@@ -499,25 +495,25 @@ var CollaborationService = /** @class */ (function () {
     CollaborationService.prototype.change = function (delta) {
         this.collaborationSocket.emit("change", delta);
     };
+    CollaborationService.prototype.restoreBuffer = function () {
+        this.collaborationSocket.emit("restoreBuffer");
+    };
     CollaborationService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        core_1.Injectable(),
         __metadata("design:paramtypes", [])
     ], CollaborationService);
     return CollaborationService;
 }());
-
+exports.CollaborationService = CollaborationService;
 
 
 /***/ }),
 
 /***/ "./src/app/services/data.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("./node_modules/rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -527,14 +523,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 //import { PROBLEMS } from "../mock-problem"
-
-
+var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("./node_modules/rxjs/_esm5/BehaviorSubject.js");
 var DataService = /** @class */ (function () {
     function DataService(httpClient) {
         this.httpClient = httpClient;
-        this._problemSource = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["a" /* BehaviorSubject */]([]);
+        this._problemSource = new BehaviorSubject_1.BehaviorSubject([]);
     }
     DataService.prototype.getProblems = function () {
         var _this = this;
@@ -554,7 +551,7 @@ var DataService = /** @class */ (function () {
     };
     DataService.prototype.addProblem = function (problem) {
         var _this = this;
-        var options = { headers: new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpHeaders */]({ 'Content-Type': 'application/json' }) };
+        var options = { headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' }) };
         return this.httpClient.post('api/v1/problems', problem, options)
             .toPromise()
             .then(function (res) {
@@ -563,30 +560,42 @@ var DataService = /** @class */ (function () {
         })
             .catch(this.handleError);
     };
+    DataService.prototype.buildAndRun = function (data) {
+        var options = { headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' }) };
+        // this will call API in Node, which will then forward to the Python flask build_and_run function
+        return this.httpClient.post('api/v1/build_and_run', data, options)
+            .toPromise()
+            .then(function (res) {
+            console.log(res);
+            return res;
+        })
+            .catch(this.handleError);
+    };
     DataService.prototype.handleError = function (error) {
         return Promise.reject(error.body || error);
     };
     DataService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], DataService);
     return DataService;
 }());
-
+exports.DataService = DataService;
 
 
 /***/ }),
 
 /***/ "./src/environments/environment.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+
 // The file contents for the current environment will overwrite these during build.
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
-var environment = {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.environment = {
     production: false
 };
 
@@ -594,22 +603,19 @@ var environment = {
 /***/ }),
 
 /***/ "./src/main.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("./node_modules/@angular/platform-browser-dynamic/esm5/platform-browser-dynamic.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("./src/app/app.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
 
-
-
-
-if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var platform_browser_dynamic_1 = __webpack_require__("./node_modules/@angular/platform-browser-dynamic/esm5/platform-browser-dynamic.js");
+var app_module_1 = __webpack_require__("./src/app/app.module.ts");
+var environment_1 = __webpack_require__("./src/environments/environment.ts");
+if (environment_1.environment.production) {
+    core_1.enableProdMode();
 }
-Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
+platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule)
     .catch(function (err) { return console.log(err); });
 
 
