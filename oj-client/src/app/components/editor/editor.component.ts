@@ -36,9 +36,10 @@ export class EditorComponent implements OnInit {
     .subscribe(params => {
     this.sessionId = params['id'];
     this.initEditor();
+    this.collaboration.restoreBuffer();
     });
   }
-  
+
   initEditor(): void {
   	this.editor = ace.edit("editor");
   	this.editor.setTheme("ace/theme/eclipse");
@@ -47,13 +48,20 @@ export class EditorComponent implements OnInit {
 
   	this.editor.lastAppliedChange = null;
 
+    // this.editor.on is also part of API of our ace library
   	this.editor.on("change", (e) => {
-  		console.log('editor changes: ' + JSON.stringify(e));
+  		console.log('editor is changing: ' + JSON.stringify(e));
 
   		if (this.editor.lastAppliedChange != e) {
   			this.collaboration.change(JSON.stringify(e));
   		}
-  	});
+    });
+    
+    // this part is not working as expected because this.editor.on is a API,
+    // it only listen to several events, like 'change', go to the API reference for more information
+    this.editor.on('userChange', (data: string[]) => {
+      console.log('collaboration: user changes ' + data);
+    })
   }
 
   resetEditor(): void {
