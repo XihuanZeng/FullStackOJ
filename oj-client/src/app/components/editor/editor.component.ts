@@ -13,7 +13,7 @@ declare var ace: any;
 })
 export class EditorComponent implements OnInit {
   editor: any;
-  public languages: string[] = ['Java', 'Python'];
+  public languages: string[] = ['Java', 'Python', 'C++'];
   language: string = 'Java';
   sessionId: string;
   // placeholder for the output of submission
@@ -26,8 +26,14 @@ export class EditorComponent implements OnInit {
   		}
   	}`,
   	'Python': `class Solution:
-  	def example():
-  		# Type your Python code here`
+  	def example(self):
+      # Type your Python code here`,
+    'C++': `class Solution {
+      public:
+          void example() {
+              
+          }
+      };`
   };
 
   constructor(private collaboration: CollaborationService, 
